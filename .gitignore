@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+penv/
+.eggs/
+*.egg
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Logs and temp files
+logs/
+*.log
+*.out
+*.tmp
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Docker-related files
+*.env
+*.pid
+
+# my testing file
+test.ipynb
