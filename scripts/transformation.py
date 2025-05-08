@@ -12,5 +12,3 @@ def transform(data):
     logging.info("The Contests transformed successfully")
 
 
-
-# transform("data/contests.csv")

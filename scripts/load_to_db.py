@@ -13,5 +13,3 @@ def load_to_db(data):
     print("The Contests loaded to DB successfully")
 
     
-    
-

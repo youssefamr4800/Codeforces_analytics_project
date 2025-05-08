@@ -13,6 +13,7 @@ from scripts.fetch_contests import fetch_contests
 from scripts.transformation import transform
 from scripts.load_to_db import load_to_db
 
+
 # Default arguments for the DAG
 default_args = {
     'owner': 'Youssef',
@@ -46,7 +47,6 @@ with DAG(
         python_callable=load_to_db,
         op_kwargs={'data': 'data/contests_transformed.csv'},
     )
-
 
 
 Extract_data >> Transform_data >> Load_data
