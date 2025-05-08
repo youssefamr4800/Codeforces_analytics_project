@@ -13,4 +13,4 @@ def transform(data):
 
 
 
-transform("data/contests.csv")
+# transform("data/contests.csv")

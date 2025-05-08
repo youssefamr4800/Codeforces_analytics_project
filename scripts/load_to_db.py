@@ -5,7 +5,7 @@ import logging
 
 def load_to_db(data):
     # Create a database connection
-    connection_uri = "postgresql+psycopg2://airflow:airflow@localhost:5432/codeforces"
+    connection_uri = "postgresql+psycopg2://airflow:airflow@postgres:5432/codeforces"
     dbengine = create_engine(connection_uri)
     df = pd.read_csv(data, index_col='id')
     df.to_sql('contests', dbengine, if_exists='replace', index=True)
@@ -14,5 +14,4 @@ def load_to_db(data):
 
     
     
-load_to_db('data/contests_transformed.csv')
 

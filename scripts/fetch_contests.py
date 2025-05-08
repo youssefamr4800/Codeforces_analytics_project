@@ -2,7 +2,7 @@ import requests
 from datetime import datetime
 import pandas as pd
 import logging
-
+import os
 
 def fetch_contests():
     url = "https://codeforces.com/api/contest.list"
@@ -15,11 +15,9 @@ def fetch_contests():
     contests = data['result']
 
     data = pd.DataFrame(contests)
+    os.makedirs('data', exist_ok=True)
     data.to_csv('data/contests.csv', index=False)
     logging.info("The Contests imported successfully")
 
     
 
-
-
-fetch_contests()
