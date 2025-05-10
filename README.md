@@ -103,7 +103,8 @@ Follow these steps to set up and run the project locally:
 │   ├── transformation.py
 │   └── load_to_db.py
 ├── docker-compose.yaml
-├── requirements.txt
+├── dashboards/
+│   └── dashboard.py
 └── README.md
 ```
 
